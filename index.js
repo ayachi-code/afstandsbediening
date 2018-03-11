@@ -16,6 +16,12 @@ microbit.discover((mb) => {
     });
 
 
+    mb.on("buttonBChange",(data) => {
+        console.log("B ingedrukt")
+    });
+
+
+
     mb.connectAndSetUp(() => {
         console.log('microbit is succesvol geconecteerd');
         mb.subscribeButtons(function() {

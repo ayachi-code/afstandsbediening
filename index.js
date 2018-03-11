@@ -19,7 +19,7 @@ microbit.discover((mb) => {
 
     mb.on("buttonAChange",(data) => {
         console.log("A ingedrukt")
-        configuratie.send('KEY_VOLUP',(err) => {
+        configuratie.send('KEY_VOLDOWN',(err) => {
             if (err) {
                 console.log("Hmm er is iets mis " + err)
             } else {

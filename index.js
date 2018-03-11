@@ -19,14 +19,27 @@ microbit.discover((mb) => {
 
     mb.on("buttonAChange",(data) => {
         console.log("A ingedrukt")
-        configuratie.send('KEY_VOLDOWN',(err) => {
-            if (err) {
-                console.log("Hmm er is iets mis " + err)
-            } else {
-                console.log("yay")
-            }
+        if (data == "1") {
+            configuratie.send('KEY_VOLDOWN',(err) => {
+                if (err) {
+                    console.log("Hmm er is iets mis " + err)
+                } else {
+                    console.log("yay")
+                }
+    
+            })
 
-        })
+        } else if(data == "2") {
+            configuratie.send('KEY_CHDOWN',(err) => {
+                if (err) {
+                    console.log("Hmm er is iets mis " + err)
+                } else {
+                    console.log("yay")
+                }
+            
+               })
+        }
+        
     });
 
 
@@ -42,7 +55,15 @@ microbit.discover((mb) => {
                 
                    })
     } else if(data == "2") {
-        console.log("Zappen")
+        console.log("hey")
+        configuratie.send('KEY_CHUP',(err) => {
+            if (err) {
+                console.log("Hmm er is iets mis " + err)
+            } else {
+                console.log("yay lekker zappen")
+            }
+        
+           })
     }
 
     });

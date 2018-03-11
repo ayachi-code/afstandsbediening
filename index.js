@@ -38,7 +38,9 @@ microbit.discover((mb) => {
                 if (err) {
                     console.log("Hmm er is iets mis " + err)
                 } else {
-                    console.log("yay")
+                    console.log("yay");
+                    kanaal -= 1;
+                    console.log(kanaal)
                 }
             
                })
@@ -65,6 +67,8 @@ microbit.discover((mb) => {
                 console.log("Hmm er is iets mis " + err)
             } else {
                 console.log("yay lekker zappen")
+                kanaal += 1;
+                console.log(kanaal)
             }
         
            })

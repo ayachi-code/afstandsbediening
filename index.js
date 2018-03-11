@@ -1,4 +1,5 @@
 const microbit = require('bbc-microbit');
+const samsung_TV = require('samsung-remote');
 
 console.log("De mcirobit zoeken....")
 microbit.discover((mb) => {

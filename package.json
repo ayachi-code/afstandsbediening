@@ -1,0 +1,19 @@
+{
+  "name": "remote-tv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayachi-code/afstandsbediening.git"
+  },
+  "author": "Bilal el Ayachi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayachi-code/afstandsbediening/issues"
+  },
+  "homepage": "https://github.com/ayachi-code/afstandsbediening#readme"
+}

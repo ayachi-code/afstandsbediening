@@ -4,6 +4,7 @@ const samsung_TV = require('samsung-remote');
 let samsung_tv_nummer = require('node-samsung-remote');
 let configuratie_tel = new samsung_tv_nummer({ip: '192.168.178.116'});
 
+let kanaal = 2;
 
 let configuratie = new samsung_TV({
     ip: '192.168.178.116'
@@ -84,7 +85,7 @@ microbit.discover((mb) => {
 
     mb.connectAndSetUp(() => {
         console.log('microbit is succesvol geconecteerd');
-        configuratie_tel.setChannel(2);
+        configuratie_tel.setChannel(kanaal);
         mb.subscribeButtons(() => {
           console.log('Knoppen kan je klikken');
         });

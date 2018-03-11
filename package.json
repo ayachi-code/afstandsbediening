@@ -18,6 +18,7 @@
   "homepage": "https://github.com/ayachi-code/afstandsbediening#readme",
   "dependencies": {
     "bbc-microbit": "^0.2.0",
+    "node-samsung-remote": "^1.0.1",
     "samsung-remote": "^1.2.5"
   }
 }

@@ -19,6 +19,7 @@
   "dependencies": {
     "bbc-microbit": "^0.2.0",
     "node-samsung-remote": "^1.0.1",
+    "node-sense-hat": "0.0.2",
     "samsung-remote": "^1.2.5"
   }
 }

@@ -1,6 +1,11 @@
 const microbit = require('bbc-microbit');
 const samsung_TV = require('samsung-remote');
 
+
+let configuratie = new SamsungRemote({
+    ip: '192.168.178.116'
+});
+
 console.log("De mcirobit zoeken....")
 microbit.discover((mb) => {
    console.log("Gevonden")
@@ -25,7 +30,7 @@ microbit.discover((mb) => {
 
     mb.connectAndSetUp(() => {
         console.log('microbit is succesvol geconecteerd');
-        mb.subscribeButtons(function() {
+        mb.subscribeButtons(() => {
           console.log('Knoppen kan je klikken');
         });
       });

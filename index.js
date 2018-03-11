@@ -1,6 +1,8 @@
 const microbit = require('bbc-microbit');
 const samsung_TV = require('samsung-remote');
 
+const led_lichtjes = require('node-sense-hat').Leds;
+
 let samsung_tv_nummer = require('node-samsung-remote');
 let configuratie_tel = new samsung_tv_nummer({ip: '192.168.178.116'});
 
